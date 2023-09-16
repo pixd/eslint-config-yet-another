@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-yet-another",
+  "version": "0.0.1",
+  "description": "Yet another Eslint config",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint test --report-unused-disable-directives"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pixd/eslint-config-yet-another.git"
+  },
+  "author": {
+    "name": "Yakov Dalinchuk"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pixd/eslint-config-yet-another/issues"
+  },
+  "homepage": "https://github.com/pixd/eslint-config-yet-another",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "typescript": "^4.9.0"
+  },
+  "peerDependencies": {
+    "eslint": "^7.0.0 || ^8.0.0",
+    "typescript": "^4.0.0 || ^5.0.0"
+  }
+}

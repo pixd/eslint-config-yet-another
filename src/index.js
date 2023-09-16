@@ -29,6 +29,14 @@ module.exports = {
       "error",
       "always-multiline"
     ],
+    "@typescript-eslint/consistent-indexed-object-style": [
+      "error",
+      "index-signature"
+    ],
+    "@typescript-eslint/consistent-type-definitions": [
+      "error",
+      "interface"
+    ],
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -143,6 +151,7 @@ module.exports = {
         "ignoreRestSiblings": true
       }
     ],
+    "@typescript-eslint/prefer-function-type": "off",
     "@typescript-eslint/prefer-nullish-coalescing": [
       "error",
       {

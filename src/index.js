@@ -35,7 +35,7 @@ module.exports = {
     ],
     "@typescript-eslint/consistent-type-definitions": [
       "error",
-      "interface"
+      "type"
     ],
     "@typescript-eslint/naming-convention": [
       "error",

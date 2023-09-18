@@ -719,3 +719,25 @@ typescriptEslint_preferNullishCoalescing: {
     })(null, null, null);
   }
 }
+
+typescriptEslint_memberDelimiterStyle: {
+  {
+    type Type = {
+      a: string;
+      b: string;
+    };
+
+    noop<Type>({} as Type);
+  }
+
+  {
+    type Type = {
+      // eslint-disable-next-line @typescript-eslint/member-delimiter-style
+      a: string
+      // eslint-disable-next-line @typescript-eslint/member-delimiter-style
+      b: string
+    };
+
+    noop<Type>({} as Type);
+  }
+}

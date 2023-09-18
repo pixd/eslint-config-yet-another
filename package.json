@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yet-another",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Yet another Eslint config",
   "keywords": [
     "eslint",

@@ -566,45 +566,89 @@ typescriptEslint_namingConvention: {
     }
   }
 
-  propertiesNaming: {
-    const product = {
-      price: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      Price: 100,
-      PRICE: 100,
-      salePrice: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      SalePrice: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      sale_price: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      Sale_Price: 100,
-      SALE_PRICE: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      priceVIP: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      PriceVIP: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      price_VIP: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      Price_VIP: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      _price: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      price_: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      _price_: 100,
-      __price: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      price__: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      __price__: 100,
-      $price: 100,
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      $$price: 100,
-    };
+  membersNaming: {
+    {
+      const product = {
+        price: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        Price: 100,
+        PRICE: 100,
+        salePrice: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        SalePrice: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        sale_price: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        Sale_Price: 100,
+        SALE_PRICE: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        priceVIP: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        PriceVIP: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        price_VIP: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        Price_VIP: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        _price: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        price_: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        _price_: 100,
+        __price: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        price__: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        __price__: 100,
+        $price: 100,
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        $$price: 100,
+        Data__TypeRef: null,
+      };
 
-    noop(product);
+      noop(product);
+    }
+
+    {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      class Product {
+        public price = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public Price = 100;
+        public PRICE = 100;
+        public salePrice = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public SalePrice = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public sale_price = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public Sale_Price = 100;
+        public SALE_PRICE = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public priceVIP = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public PriceVIP = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public price_VIP = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public Price_VIP = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public _price = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public price_ = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public _price_ = 100;
+        public __price = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public price__ = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public __price__ = 100;
+        public $price = 100;
+        // eslint-disable-next-line @typescript-eslint/naming-convention
+        public $$price = 100;
+        public Data__TypeRef = null;
+      }
+    }
   }
 }
 

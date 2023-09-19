@@ -16,8 +16,16 @@ module.exports = {
     ],
     "max-len": "off",
     "no-console": "warn",
-    "no-unused-labels": "off",
+    "no-unused-labels": "warn",
     "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "Function": false
+        }
+      }
+    ],
     "@typescript-eslint/brace-style": [
       "error",
       "stroustrup",
@@ -29,10 +37,7 @@ module.exports = {
       "error",
       "always-multiline"
     ],
-    "@typescript-eslint/consistent-indexed-object-style": [
-      "error",
-      "index-signature"
-    ],
+    "@typescript-eslint/consistent-indexed-object-style": "off",
     "@typescript-eslint/consistent-type-definitions": [
       "error",
       "type"
@@ -84,6 +89,21 @@ module.exports = {
         "format": [
           "strictCamelCase",
           "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "memberLike",
+        "filter": {
+          "match": true,
+          "regex": "__TypeRef$"
+        },
+        "leadingUnderscore": "forbid",
+        "trailingUnderscore": "forbid",
+        "suffix": [
+          "__TypeRef"
+        ],
+        "format": [
+          "StrictPascalCase"
         ]
       },
       {
@@ -149,12 +169,14 @@ module.exports = {
       }
     ],
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-redundant-type-constituents": "error",
+    "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
-    "@typescript-eslint/no-unnecessary-type-constraint": "off",
+    "@typescript-eslint/no-unnecessary-type-constraint": "warn",
     "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-member-access": "warn",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unused-vars": [
       "error",
@@ -179,6 +201,7 @@ module.exports = {
         }
       }
     ],
-    "@typescript-eslint/prefer-ts-expect-error": "off"
+    "@typescript-eslint/prefer-ts-expect-error": "off",
+    "@typescript-eslint/unbound-method": "warn"
   }
 };

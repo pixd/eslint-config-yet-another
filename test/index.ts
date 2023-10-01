@@ -603,6 +603,7 @@ typescriptEslint_namingConvention: {
         $price: 100,
         // eslint-disable-next-line @typescript-eslint/naming-convention
         $$price: 100,
+        $: 100,
         Data__TypeRef: null,
       };
 
@@ -646,6 +647,7 @@ typescriptEslint_namingConvention: {
         public $price = 100;
         // eslint-disable-next-line @typescript-eslint/naming-convention
         public $$price = 100;
+        public $ = 100;
         public Data__TypeRef = null;
       }
     }

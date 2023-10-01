@@ -75,6 +75,18 @@ module.exports = {
         "selector": "memberLike",
         "filter": {
           "match": true,
+          "regex": "^\\$$"
+        },
+        "leadingUnderscore": "forbid",
+        "trailingUnderscore": "forbid",
+        "prefix": [
+          "$"
+        ],
+      },
+      {
+        "selector": "memberLike",
+        "filter": {
+          "match": true,
           "regex": "^\\$"
         },
         "leadingUnderscore": "forbid",
@@ -176,6 +188,7 @@ module.exports = {
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "warn",
     "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-declaration-merging": "warn",
     "@typescript-eslint/no-unsafe-member-access": "warn",
     "@typescript-eslint/no-unsafe-return": "off",
     "@typescript-eslint/no-unused-vars": [
@@ -201,6 +214,8 @@ module.exports = {
         }
       }
     ],
+    "@typescript-eslint/prefer-reduce-type-parameter": "off",
+    "@typescript-eslint/prefer-return-this-type": "warn",
     "@typescript-eslint/prefer-ts-expect-error": "off",
     "@typescript-eslint/unbound-method": "warn"
   }

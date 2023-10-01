@@ -82,6 +82,7 @@ module.exports = {
         "prefix": [
           "$"
         ],
+        "format": [],
       },
       {
         "selector": "memberLike",

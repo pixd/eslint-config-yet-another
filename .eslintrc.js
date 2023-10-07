@@ -23,7 +23,9 @@ module.exports = {
       "rules": {
         "array-bracket-newline": [
           "error",
-          "always"
+          {
+            "minItems": 1
+          }
         ],
         "array-element-newline": [
           "error",
@@ -36,7 +38,9 @@ module.exports = {
         ],
         "object-curly-newline": [
           "error",
-          "always"
+          {
+            "minProperties": 1
+          }
         ],
         "object-property-newline": "error",
         "quotes": "off",

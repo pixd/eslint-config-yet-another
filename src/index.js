@@ -6,6 +6,14 @@ module.exports = {
     "plugin:@typescript-eslint/stylistic-type-checked"
   ],
   "rules": {
+    "arrow-parens": [
+      "error",
+      "always"
+    ],
+    "function-call-argument-newline": [
+      "error",
+      "consistent"
+    ],
     "function-paren-newline": [
       "error",
       "consistent"
@@ -17,6 +25,10 @@ module.exports = {
     "max-len": "off",
     "no-console": "warn",
     "no-unused-labels": "warn",
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/ban-types": [
       "error",
@@ -75,6 +87,23 @@ module.exports = {
         "selector": "memberLike",
         "filter": {
           "match": true,
+          "regex": "^\\$\\$"
+        },
+        "leadingUnderscore": "forbid",
+        "trailingUnderscore": "forbid",
+        "prefix": [
+          "$$"
+        ],
+        "format": [
+          "strictCamelCase",
+          "StrictPascalCase",
+          "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "memberLike",
+        "filter": {
+          "match": true,
           "regex": "^\\$$"
         },
         "leadingUnderscore": "forbid",
@@ -82,7 +111,7 @@ module.exports = {
         "prefix": [
           "$"
         ],
-        "format": [],
+        "format": []
       },
       {
         "selector": "memberLike",
@@ -182,7 +211,7 @@ module.exports = {
       }
     ],
     "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-inferrable-types": "warn",
+    "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-redundant-type-constituents": "error",
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",

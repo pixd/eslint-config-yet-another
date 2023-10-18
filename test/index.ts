@@ -604,6 +604,7 @@ typescriptEslint_namingConvention: {
         $$price: 100,
         $: 100,
         Data__TypeRef: null,
+        '1': 100,
       };
 
       noop(product);
@@ -647,6 +648,7 @@ typescriptEslint_namingConvention: {
         public $$price = 100;
         public $ = 100;
         public Data__TypeRef = null;
+        public 1 = 100;
       }
     }
   }

@@ -117,6 +117,16 @@ module.exports = {
         "selector": "memberLike",
         "filter": {
           "match": true,
+          "regex": "^[0-9]+$"
+        },
+        "leadingUnderscore": "forbid",
+        "trailingUnderscore": "forbid",
+        "format": []
+      },
+      {
+        "selector": "memberLike",
+        "filter": {
+          "match": true,
           "regex": "^\\$"
         },
         "leadingUnderscore": "forbid",
@@ -210,14 +220,18 @@ module.exports = {
         ]
       }
     ],
+    "@typescript-eslint/no-dynamic-delete": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-redundant-type-constituents": "error",
+    "@typescript-eslint/no-this-alias": "warn",
     "@typescript-eslint/no-unnecessary-type-arguments": "warn",
     "@typescript-eslint/no-unnecessary-type-assertion": "error",
     "@typescript-eslint/no-unnecessary-type-constraint": "warn",
+    "@typescript-eslint/no-unsafe-argument": "warn",
     "@typescript-eslint/no-unsafe-assignment": "off",
+    "@typescript-eslint/no-unsafe-call": "warn",
     "@typescript-eslint/no-unsafe-declaration-merging": "warn",
     "@typescript-eslint/no-unsafe-member-access": "warn",
     "@typescript-eslint/no-unsafe-return": "off",

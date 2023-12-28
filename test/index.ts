@@ -2,6 +2,24 @@ function noop<T extends any = any>(a: T): T {
   return a;
 }
 
+noUnreachable: {
+  noop((a: any) => {
+    if (a) {
+      return a;
+    }
+    else {
+      return null;
+    }
+    // eslint-disable-next-line no-unreachable
+    return undefined;
+  });
+}
+
+semi: {
+  // eslint-disable-next-line @typescript-eslint/semi
+  console.log(null)
+}
+
 typescriptEslint_namingConvention: {
   varsNaming: {
     {
@@ -781,7 +799,7 @@ typescriptEslint_memberDelimiterStyle: {
       // eslint-disable-next-line @typescript-eslint/member-delimiter-style
       a: string
       // eslint-disable-next-line @typescript-eslint/member-delimiter-style
-      b: string
+      b: string,
     };
 
     noop<Type>({} as Type);

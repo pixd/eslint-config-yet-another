@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": false,
-    "allowUnreachableCode": false,
     "allowUnusedLabels": true,
     "alwaysStrict": true,
     "declaration": true,

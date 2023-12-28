@@ -24,6 +24,7 @@ module.exports = {
     ],
     "max-len": "off",
     "no-console": "warn",
+    "no-unreachable": "error",
     "no-unused-labels": "warn",
     "space-in-parens": [
       "error",
@@ -261,6 +262,7 @@ module.exports = {
     "@typescript-eslint/prefer-reduce-type-parameter": "off",
     "@typescript-eslint/prefer-return-this-type": "warn",
     "@typescript-eslint/prefer-ts-expect-error": "off",
+    "@typescript-eslint/semi": "error",
     "@typescript-eslint/unbound-method": "warn"
   }
 };
